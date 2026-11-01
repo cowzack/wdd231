@@ -1,0 +1,52 @@
+
+/* Larger Screen Styles */
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 10px;
+    }
+
+    nav a {
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    /* Two-column layout */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    main section:last-child {
+        grid-column: 1 / -1;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}

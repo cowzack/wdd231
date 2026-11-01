@@ -1,0 +1,17 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="logoTitle">
+
+    <title id="logoTitle">LJG Web Development Logo</title>
+
+    <rect width="100" height="100" rx="20" fill="#ffffff"></rect>
+
+    <rect x="5" y="5" width="90" height="90" rx="16" fill="none" stroke="#123456" stroke-width="4"></rect>
+
+    <path d="M35 30 L18 50 L35 70" fill="none" stroke="#123456" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    <path d="M65 30 L82 50 L65 70" fill="none" stroke="#123456" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    <path d="M57 25 L43 75" fill="none" stroke="#245b89" stroke-width="6" stroke-linecap="round"></path>
+
+    <text x="50" y="91" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#123456">LJG</text>
+</svg>
