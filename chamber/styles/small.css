@@ -1,0 +1,284 @@
+
+/* =================================
+   ZAMBALES CHAMBER OF COMMERCE
+   Mobile-First Styles
+================================= */
+
+:root {
+    --primary-color: #17466b;
+    --secondary-color: #238c91;
+    --accent-color: #f2e5c9;
+    --dark-color: #263238;
+    --light-color: #f5f7f8;
+    --white: #ffffff;
+    --border-color: #d5dce1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.brand span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.brand strong {
+    font-size: 1.15rem;
+}
+
+.brand small {
+    font-size: 0.75rem;
+}
+
+/* Mobile Navigation */
+
+#menu-button {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    padding: 0.35rem 0.7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    border-top: 1px solid #ffffff40;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+/* Main Content */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro {
+    max-width: 750px;
+    margin-bottom: 1.5rem;
+}
+
+/* Directory Section */
+
+.directory-section {
+    margin-top: 1.5rem;
+}
+
+.view-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.view-controls h2 {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.view-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-buttons button {
+    border: 2px solid var(--primary-color);
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.view-buttons button.active,
+.view-buttons button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Grid View */
+
+#members-container.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Member Cards */
+
+.member-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px #00000012;
+}
+
+.member-card img {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.7rem;
+}
+
+.member-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    margin-bottom: 0.4rem;
+    overflow-wrap: anywhere;
+}
+
+.member-card a {
+    color: var(--primary-color);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.membership {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+/* List View */
+
+#members-container.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#members-container.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+#members-container.list .member-card img {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+}
+
+footer section {
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+    overflow-wrap: anywhere;
+}
+
+/* Keyboard Accessibility */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #e6b84c;
+    outline-offset: 3px;
+}
+
+/* Small Screens */
+
+@media screen and (min-width: 480px) {
+    #members-container.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .view-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

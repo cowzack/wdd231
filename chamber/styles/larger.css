@@ -1,0 +1,74 @@
+
+/* =================================
+   LARGER SCREEN STYLES
+================================= */
+
+@media screen and (min-width: 768px) {
+
+    /* Header and Navigation */
+
+    .header-content {
+        padding: 1rem 2rem;
+        flex-wrap: nowrap;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        border: none;
+        border-radius: 5px;
+        padding: 0.7rem 1rem;
+    }
+
+    /* Main Content */
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Directory Grid */
+
+    #members-container.grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #members-container.list .member-card {
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #members-container.list .member-card img {
+        display: block;
+        width: 100px;
+        height: 80px;
+        margin: 0;
+    }
+
+    #members-container.list .member-card:nth-child(even) {
+        background-color: #e9eff2;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        text-align: left;
+    }
+}

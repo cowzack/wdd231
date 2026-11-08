@@ -1,0 +1,66 @@
+
+[
+    {
+        "name": "Zambales Coastal Resort",
+        "address": "Sample Road, Subic, Zambales",
+        "phone": "+63 900 000 0001",
+        "website": "https://example.com",
+        "image": "coastal-resort.jpg",
+        "membership": 3,
+        "description": "A sample resort business offering accommodation and beach experiences."
+    },
+    {
+        "name": "Iba Fresh Market",
+        "address": "Sample Street, Iba, Zambales",
+        "phone": "+63 900 000 0002",
+        "website": "https://example.com",
+        "image": "fresh-market.jpg",
+        "membership": 2,
+        "description": "A sample local market providing fresh produce and everyday essentials."
+    },
+    {
+        "name": "Botolan Adventure Tours",
+        "address": "Sample Road, Botolan, Zambales",
+        "phone": "+63 900 000 0003",
+        "website": "https://example.com",
+        "image": "adventure-tours.jpg",
+        "membership": 3,
+        "description": "A sample tourism business offering nature and outdoor adventures."
+    },
+    {
+        "name": "Masinloc Food House",
+        "address": "Sample Street, Masinloc, Zambales",
+        "phone": "+63 900 000 0004",
+        "website": "https://example.com",
+        "image": "food-house.jpg",
+        "membership": 1,
+        "description": "A sample restaurant serving local Filipino-inspired meals."
+    },
+    {
+        "name": "Palauig Digital Solutions",
+        "address": "Sample Road, Palauig, Zambales",
+        "phone": "+63 900 000 0005",
+        "website": "https://example.com",
+        "image": "digital-solutions.jpg",
+        "membership": 2,
+        "description": "A sample technology business providing digital and computer services."
+    },
+    {
+        "name": "San Antonio Trading Center",
+        "address": "Sample Street, San Antonio, Zambales",
+        "phone": "+63 900 000 0006",
+        "website": "https://example.com",
+        "image": "trading-center.jpg",
+        "membership": 1,
+        "description": "A sample trading business offering products and supplies to the community."
+    },
+    {
+        "name": "Castillejos Print Studio",
+        "address": "Sample Road, Castillejos, Zambales",
+        "phone": "+63 900 000 0007",
+        "website": "https://example.com",
+        "image": "print-studio.jpg",
+        "membership": 2,
+        "description": "A sample printing business offering customized printing services."
+    }
+]
