@@ -1,0 +1,203 @@
+
+/* ========================================
+   HOME PAGE STYLES
+======================================== */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.hero-content p {
+    max-width: 600px;
+    font-size: 1.1rem;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.9rem 1.5rem;
+    background-color: #17466b;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #238c91;
+    color: #ffffff;
+}
+
+/* Home Page Sections */
+.events-section,
+.weather-section,
+.spotlights-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #d5dce1;
+    border-radius: 10px;
+}
+
+.events-section h2,
+.weather-section h2,
+.spotlights-section h2 {
+    color: #17466b;
+    margin-top: 0;
+    border-bottom: 2px solid #238c91;
+    padding-bottom: 0.7rem;
+}
+
+/* Events */
+.event-card {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f5f7f8;
+    border-left: 4px solid #238c91;
+    border-radius: 5px;
+}
+
+.event-card h3 {
+    color: #17466b;
+}
+
+/* Weather */
+#weather-container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.current-weather {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f7f8;
+    border-radius: 8px;
+}
+
+.current-weather img,
+.forecast-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.current-weather p {
+    margin: 0.4rem;
+}
+
+.forecast-section {
+    text-align: center;
+}
+
+.forecast-section h3 {
+    color: #17466b;
+}
+
+.forecast-card {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #f5f7f8;
+    border-radius: 8px;
+}
+
+/* Business Spotlights */
+#spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #f5f7f8;
+    border: 1px solid #d5dce1;
+    border-radius: 8px;
+}
+
+.spotlight-card img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+}
+
+.spotlight-card h3 {
+    color: #17466b;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.7rem;
+    color: #17466b;
+    font-weight: 700;
+}
+
+/* ========================================
+   DESKTOP LAYOUT
+======================================== */
+
+@media screen and (min-width: 768px) {
+
+    .hero img {
+        height: 450px;
+    }
+
+    /* Events and Weather side by side */
+    .home-information {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Three Business Spotlight Cards */
+    #spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Three-day Forecast */
+    .forecast-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .forecast-section h3 {
+        grid-column: 1 / -1;
+    }
+}
